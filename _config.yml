@@ -1,0 +1,5 @@
+theme: jekyll-theme-minimal
+url: "https://cdn.goinsan.com/"
+permalink: /:categories/:year/:month/:title/
+title: CDN
+description: CDN
