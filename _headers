@@ -12,3 +12,13 @@
   Access-Control-Allow-Origin: *
   Content-Type: application/json
   Cache-Control: public, max-age=600
+
+/data/bisnis.json
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json
+  Cache-Control: public, max-age=600
+
+/data/crypto.json
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json
+  Cache-Control: public, max-age=600
