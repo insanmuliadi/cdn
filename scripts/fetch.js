@@ -1,6 +1,6 @@
-const fs = require('fs');
-const https = require('https');
-const path = require('path');
+import fs from 'fs';
+import https from 'https';
+import path from 'path';
 
 const FEED_URLS = [
   {
