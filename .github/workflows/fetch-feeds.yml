@@ -1,0 +1,35 @@
+name: Fetch Blogger Feed
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # setiap jam
+  workflow_dispatch:      # bisa dijalankan manual
+  push:
+    paths:
+      - '.github/workflows/fetch-feed.yml'
+
+jobs:
+  fetch-and-commit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Jalankan fetch-feed.js
+        run: node scripts/fetch-feed.js
+
+      - name: Commit dan push perubahan
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add data/posts.json
+          git commit -m "🔄 Update posts.json (auto)" || echo "No changes"
+          git push
