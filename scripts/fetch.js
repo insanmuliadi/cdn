@@ -1,6 +1,12 @@
-import fs from 'fs';
+import { writeFileSync, mkdirSync } from 'fs';
 import https from 'https';
-import path from 'path';
+import { join } from 'path';
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+// Untuk dapatkan __dirname di ESM
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 const FEED_URLS = [
   {
@@ -44,16 +50,17 @@ async function fetchAndSaveFeeds() {
       console.log(`📥 Fetching from ${feed.source}`);
       const { source, posts } = await fetchFeed(feed);
 
-      const dir = 'data';
-      const filepath = path.join(dir, `${source}.json`);
+      const dir = join(__dirname, '../data');
+      const filepath = join(dir, `${source}.json`);
 
-      fs.mkdirSync(dir, { recursive: true });
-      fs.writeFileSync(filepath, JSON.stringify({ posts }, null, 2));
+      mkdirSync(dir, { recursive: true });
+      writeFileSync(filepath, JSON.stringify({ posts }, null, 2));
 
       console.log(`✅ Saved ${posts.length} posts to ${filepath}`);
     }
   } catch (err) {
     console.error(err);
+    process.exit(1); // exit with error
   }
 }
 
