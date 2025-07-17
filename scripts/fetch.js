@@ -30,6 +30,7 @@ function fetchFeed({ url, source }) {
           const entries = json.feed.entry || [];
           const posts = entries.map(entry => ({
             title: entry.title?.$t || '',
+            thumbnail: entry.media$thumbnail.url || '',
             link: entry.link?.find(l => l.rel === 'alternate')?.href || '',
             published: entry.published?.$t || '',
           }));
