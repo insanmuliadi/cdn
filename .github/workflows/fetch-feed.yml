@@ -23,7 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Jalankan fetch-feed.js
+      - name: Jalankan fetch.js
         run: node scripts/fetch.js
 
       - name: Commit dan push perubahan
