@@ -1,0 +1,11 @@
+{
+  "name": "fetch-blogger-feed",
+  "version": "1.0.0",
+  "description": "Script to fetch Blogger feed and save as JSON",
+  "main": "scripts/fetch.js",
+  "type": "module",
+  "scripts": {
+    "start": "node scripts/fetch.js"
+  },
+  "dependencies": {}
+}
