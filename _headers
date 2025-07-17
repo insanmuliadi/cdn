@@ -1,0 +1,4 @@
+/data/posts.json
+  Access-Control-Allow-Origin: *
+  Content-Type: application/json
+  Cache-Control: public, max-age=600
