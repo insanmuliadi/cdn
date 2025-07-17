@@ -2,7 +2,7 @@ name: Fetch Blogger Feed
 
 on:
   schedule:
-    - cron: '0 * * * *'  # setiap jam
+    - cron: '*/5 * * * *'  # setiap jam
   workflow_dispatch:      # bisa dijalankan manual
   push:
     paths:
