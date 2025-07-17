@@ -20,12 +20,12 @@ const FEED_URLS = [
   ,
   {
     url: 'https://www.goinsan.com/feeds/posts/summary/-/bisnis?alt=json&orderby=updated&max-results=5',
-    source: 'gadget'
+    source: 'bisnis'
   }
   ,
   {
     url: 'https://www.goinsan.com/feeds/posts/summary/-/crypto?alt=json&orderby=updated&max-results=5',
-    source: 'gadget'
+    source: 'crypto'
   }
 ];
 
