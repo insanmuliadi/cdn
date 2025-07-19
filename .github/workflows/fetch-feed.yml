@@ -2,7 +2,7 @@ name: Fetch Blogger Feed
 
 on:
   schedule:
-    - cron: '0 */12 * * *' # Setiap 6 jam
+    - cron: '0 */24 * * *' # Setiap 6 jam
   workflow_dispatch:
 
 permissions:
