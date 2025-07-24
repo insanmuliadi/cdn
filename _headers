@@ -1,24 +1,4 @@
-/data/posts.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json
-  Cache-Control: public, max-age=600
-
-/data/gadget.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json
-  Cache-Control: public, max-age=600
-
-/data/lifestyle.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json
-  Cache-Control: public, max-age=600
-
-/data/bisnis.json
-  Access-Control-Allow-Origin: *
-  Content-Type: application/json
-  Cache-Control: public, max-age=600
-
-/data/crypto.json
+/data/*.json
   Access-Control-Allow-Origin: *
   Content-Type: application/json
   Cache-Control: public, max-age=600
