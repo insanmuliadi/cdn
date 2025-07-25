@@ -26,6 +26,10 @@ const FEED_URLS = [
   {
     url: 'https://www.goinsan.com/feeds/posts/summary/-/crypto?alt=json&orderby=updated&max-results=5',
     source: 'crypto'
+  },
+  {
+    url: 'https://www.goinsan.com/feeds/posts/summary/-/properti?alt=json&max-results=25',
+    source: 'crypto'
   }
 ];
 
