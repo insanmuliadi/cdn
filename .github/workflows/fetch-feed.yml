@@ -36,3 +36,6 @@ jobs:
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: 🔁 Trigger Netlify Build Hook
+        run: curl -X POST -d '{}' https://api.netlify.com/build_hooks/68835490cd72f6d6aaba7e24
