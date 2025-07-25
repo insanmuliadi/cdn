@@ -29,7 +29,7 @@ const FEED_URLS = [
   },
   {
     url: 'https://www.goinsan.com/feeds/posts/summary/-/properti?alt=json&max-results=25',
-    source: 'crypto'
+    source: 'properti'
   }
 ];
 
