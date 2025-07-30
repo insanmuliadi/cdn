@@ -19,7 +19,7 @@ const FEED_URLS = [
   }
   ,
   {
-    url: 'https://www.goinsan.com/feeds/posts/summary/-/bisnis?alt=json&orderby=updated&max-results=5',
+    url: 'https://www.goinsan.com/feeds/posts/summary/-/bisnis?alt=json&orderby=published&max-results=5',
     source: 'bisnis'
   }
   ,
